@@ -110,8 +110,8 @@ const String kLocalExamplePage = '''
 
 <h1>Local demo page</h1>
 <p>
-  This is an example page used to demonstrate how to load a local file or HTML 
-  string using the <a href="https://pub.dev/packages/webview_flutter">Flutter 
+  This is an example page used to demonstrate how to load a local file or HTML
+  string using the <a href="https://pub.dev/packages/webview_flutter">Flutter
   webview</a> plugin.
 </p>
 
@@ -558,7 +558,7 @@ class SampleMenu extends StatelessWidget {
   }
 
   Widget _getCookieList(String cookies) {
-    if (cookies == null || cookies == '""') {
+    if (cookies == '""') {
       return Container();
     }
     final List<String> cookieList = cookies.split(';');
@@ -585,8 +585,7 @@ class SampleMenu extends StatelessWidget {
 
 class NavigationControls extends StatelessWidget {
   const NavigationControls(this._webViewControllerFuture, {Key? key})
-      : assert(_webViewControllerFuture != null),
-        super(key: key);
+      : super(key: key);
 
   final Future<WebViewController> _webViewControllerFuture;
 

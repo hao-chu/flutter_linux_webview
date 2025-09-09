@@ -164,20 +164,20 @@ else()
   if("${CMAKE_HOST_SYSTEM_PROCESSOR}" STREQUAL "aarch64")
     # linux arm64
     set(WEBVIEW_CEF_DISTRIB_NAME
-      "cef_binary_96.0.18+gfe551e4+chromium-96.0.4664.110_linuxarm64_minimal")
+      "cef_binary_139.0.38+g7656fe3+chromium-139.0.7258.139_linuxarm64_minimal")
     set(WEBVIEW_CEF_DISTRIB_URL
-      "https://cef-builds.spotifycdn.com/cef_binary_96.0.18%2Bgfe551e4%2Bchromium-96.0.4664.110_linuxarm64_minimal.tar.bz2")
-    set(WEBVIEW_CEF_DISTRIB_HASH_SHA1 "604b8ee00ecb9957d1826a8a5f30882cd8018652")
+      "https://cef-builds.spotifycdn.com/cef_binary_139.0.38%2Bg7656fe3%2Bchromium-139.0.7258.139_linuxarm64_minimal.tar.bz2")
+    set(WEBVIEW_CEF_DISTRIB_HASH_SHA1 "cdde85a000640e405bd38c16b6322b7fd76b7bfd")
     set(WEBVIEW_CEF_BUILD_TYPE "Release")
     # The CEF binary distrib requires the PROJECT_ARCH variable
     set(PROJECT_ARCH "arm64")
   else()
     # linux x86_64
     set(WEBVIEW_CEF_DISTRIB_NAME
-      "cef_binary_96.0.18+gfe551e4+chromium-96.0.4664.110_linux64_minimal")
+      "cef_binary_139.0.38+g7656fe3+chromium-139.0.7258.139_linux64_minimal")
     set(WEBVIEW_CEF_DISTRIB_URL
-      "https://cef-builds.spotifycdn.com/cef_binary_96.0.18%2Bgfe551e4%2Bchromium-96.0.4664.110_linux64_minimal.tar.bz2")
-    set(WEBVIEW_CEF_DISTRIB_HASH_SHA1 "2f944adae71dd1a6c4d795373166a09f543c7cbd")
+      "https://cef-builds.spotifycdn.com/cef_binary_139.0.38%2Bg7656fe3%2Bchromium-139.0.7258.139_linux64_minimal.tar.bz2")
+    set(WEBVIEW_CEF_DISTRIB_HASH_SHA1 "174f5ee165eec0146a487461330a3d42ff36119b")
     set(WEBVIEW_CEF_BUILD_TYPE "Release")
   endif()
 endif()
@@ -328,7 +328,6 @@ function(install_dirs_and_files)
 
   set(CEF_BINARY_FILES
     libcef.so
-    snapshot_blob.bin
     v8_context_snapshot.bin
     libEGL.so
     libGLESv2.so

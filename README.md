@@ -7,8 +7,8 @@ A Linux Desktop implementation for the [webview_flutter](https://pub.dev/package
 This plugin package provides the Linux implementation for [webview_flutter](https://pub.dev/packages/webview_flutter/versions/3.0.4) (v3.0.4) using CEF.
 
 Depending on the architecture, the following CEF binary distribution provided at https://cef-builds.spotifycdn.com/index.html is downloaded in the source directory of the plugin at the first build time:
-- for x86_64: [cef_binary_96.0.18+gfe551e4+chromium-96.0.4664.110_linux64_minimal](https://cef-builds.spotifycdn.com/cef_binary_96.0.18%2Bgfe551e4%2Bchromium-96.0.4664.110_linux64_minimal.tar.bz2)
-- for arm64: [cef_binary_96.0.18+gfe551e4+chromium-96.0.4664.110_linuxarm64_minimal](https://cef-builds.spotifycdn.com/cef_binary_96.0.18%2Bgfe551e4%2Bchromium-96.0.4664.110_linuxarm64_minimal.tar.bz2)
+- for x86_64: [cef_binary_139.0.38+g7656fe3+chromium-139.0.7258.139_linux64_minimal](https://cef-builds.spotifycdn.com/cef_binary_139.0.38%2Bg7656fe3%2Bchromium-139.0.7258.139_linux64_minimal.tar.bz2)
+- for arm64: [cef_binary_139.0.38+g7656fe3+chromium-139.0.7258.139_linuxarm64_minimal](https://cef-builds.spotifycdn.com/cef_binary_139.0.38%2Bg7656fe3%2Bchromium-139.0.7258.139_linuxarm64_minimal.tar.bz2)
 
 <!-- note: pub.dev and GitBucket does not resolve relative paths!! GitHub does. -->
 <table>
@@ -523,7 +523,7 @@ Not implemented on Linux. Will be supported in the future.
 * [ ] Implement `javascriptMode`
 * [ ] Improve `onWebResourceError` support
 * [ ] Implement `getScrollX`, `getScrollY`, `scrollBy`, `scrollTo()`
-* [ ] Update the underlying browser version (currently CEF/Chromium 96.0.4664.110)
+* [ ] Update the underlying browser version (currently CEF/Chromium 139.0.7258.139)
 
 
 ## Contributing

@@ -1,9 +1,9 @@
 --- CMakeLists.txt
 +++ CMakeLists.txt
-@@ -133,7 +133,7 @@
+@@ -135,7 +135,7 @@
  #
  
- # For VS2019 and Xcode 12+ support.
+ # For VS2022 and Xcode 12+ support.
 -cmake_minimum_required(VERSION 3.21)
 +cmake_minimum_required(VERSION 3.10)
  
